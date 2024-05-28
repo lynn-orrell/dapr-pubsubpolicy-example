@@ -1,0 +1,10 @@
+version: 1
+common:
+  resourcesPath: ./components/
+apps:
+  - appID: pubsub-policy
+    appDirPath: ./
+    appPort: 5245
+    #logLevel: debug
+    daprdLogDestination: fileAndConsole
+    command: ["dotnet", "run"]
